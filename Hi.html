@@ -27,13 +27,31 @@
             margin: 0;
         }
 
-        @media (prefers-color-scheme: dark) {
-            #page-loader {
-                color-scheme: light;
-                background-color: white;
-                color: black;
-            }
-        }
+        /* LOCK loader colors, no matter the user's dark mode */
+@media (prefers-color-scheme: dark) {
+  .wheel-and-hamster, 
+  .wheel-and-hamster * {
+    color-scheme: light !important;
+    background: inherit !important;
+    filter: none !important;
+  }
+}
+
+/* You can also force base colors directly */
+.wheel-and-hamster {
+  background-color: #fff; /* or whatever fixed color */
+  color: #000;            /* optional if text is involved */
+}
+
+/* Example: fix specific hamster part colors */
+.hamster__body {
+  background-color: #f4a261 !important; /* a fixed body color */
+}
+
+.wheel {
+  border: 4px solid #333 !important; /* fixed wheel outline */
+}
+
 
         body {
             background: linear-gradient(0.25turn, rgb(0, 38, 77), rgb(0, 38, 70));
