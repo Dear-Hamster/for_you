@@ -13,6 +13,7 @@
         content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMDugl2siKVTnQUhkzqZXmNhnUl_IXm-tsnodgHf4C3dPn6v4gz06nVm1ASqpRXO65Dg3PkYB9bKsThBPUxygLD9Euem9SSTr0LRIGK9x5uaLvK4WIPn6VlSx0qSrPGhTknGVHeVMpioiBcXiqrk-dF3d4SYS8QIkWkDlMgRrdF4vw_iw-EOgTYcwo6xhs/s300/1000314955.jpg">
     <meta property="og:image:alt" content="Cutieee">
     <meta property="og:type" content="website">
+    <link rel="stylesheet" href="./assets/loader.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -767,6 +768,31 @@
 </head>
 
 <body>
+    <!-- Page Loader -->
+    <div id="page-loader">
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <!-- From Uiverse.io by Nawsome -->
+            <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+                <div class="wheel"></div>
+                <div class="hamster">
+                    <div class="hamster__body">
+                        <div class="hamster__head">
+                            <div class="hamster__ear"></div>
+                            <div class="hamster__eye"></div>
+                            <div class="hamster__nose"></div>
+                        </div>
+                        <div class="hamster__limb hamster__limb--fr"></div>
+                        <div class="hamster__limb hamster__limb--fl"></div>
+                        <div class="hamster__limb hamster__limb--br"></div>
+                        <div class="hamster__limb hamster__limb--bl"></div>
+                        <div class="hamster__tail"></div>
+                    </div>
+                </div>
+                <div class="spoke"></div>
+            </div>
+        </div>
+    </div>
+    <!-- ############################################## -->
     <audio src="./assets/Blue_index.mp3" id="linkmp3" class="sembunyi"></audio>
     <div class="overlay" style="display: flex; flex-direction: column;">
         <div class="greetings">
@@ -916,7 +942,21 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+	window.addEventListener("load", () => {
+		const loader = document.getElementById("page-loader");
 
+		// ⏳ Wait 5 seconds before hiding
+		setTimeout(() => {
+			loader.classList.add("hidden");
+
+			// Optional: remove it completely after fade out
+			setTimeout(() => {
+				loader.remove();
+			}, 500); // match your fade transition
+		}, 5000); // 5 seconds in milliseconds
+	});
+</script>
     <script>
         var teksSekarang = 1; const body = document.querySelector("body"); audio = new Audio('' + linkmp3.src);
         var swiper = new Swiper(".mySwiper", {
