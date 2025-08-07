@@ -3,13 +3,13 @@
 </h1>
 <h1 align="center">
 
-------![Cutiee](./assets/cubit.gif)--------
+![Cutiee](./assets/cubit.gif)
 
 </h1>
 
 
 
-## 💖 Pookie Website - A Web Project from the Heart
+## 💖 ```Pookie Website ```- A Web Project from the Heart
 
 The **Pookie Website** is a simple but meaningful web project I built using **HTML**, **CSS**, and **JavaScript**. 
 
@@ -28,6 +28,7 @@ I designed the site with love, adding cute visuals, sweet messages, and a touch 
 | JavaScript | Logic and interaction (the brain)|
 
 
+
 ### 🧠 What I Learned:
 - How to turn emotions into code (fr, this taught me that dev work can be deeply personal)
 - Improved my front-end skills while working on something that mattered emotionally
@@ -40,5 +41,9 @@ Sometimes tech isn't about building the next startup —
 Sometimes it's about using your skills to connect, to communicate, and to show someone you care in your own creative way.  
 This site is my way of saying: **"I messed up, but I care enough to code for you."**
 
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <img src="./assets/gemoy.gif" alt="Image 1" />
+  <img src="./assets/panah.gif" alt="Image 2" />
+</div>
 
 
